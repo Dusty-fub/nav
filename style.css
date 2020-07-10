@@ -1,0 +1,316 @@
+* {
+  box-sizing : border-box;
+}
+
+
+* {
+  margin : 0;
+  padding : 0;
+}
+
+ul, ol {
+  list-style : none;
+}
+
+
+body {
+  background : #EEEEEE;
+}
+
+.globalHeader {
+  margin : 20px;
+}
+
+.searchForm {
+  display : flex;
+  justify-content : space-between;
+  background-color : white;
+}
+
+.searchForm > input {
+  margin-right : 10px;
+  height : 40px;
+  width : 900px;
+  padding : 0 10px;
+  border-radius : 4px;
+  background-color : inherit;
+  border-width : 0;
+  appearance : none;
+}
+.searchForm > button {
+  white-space : nowrap;
+  border : none;
+  border-radius : 4px;
+  color : gray;
+  font-size : 16px;
+  background-color : inherit;
+}
+
+.search_en {
+  width : 25px;
+  margin-left : 5px;
+  margin-right : 5px;
+}
+
+.search_click {
+  margin-right : 8px;
+}
+
+
+.search_en .icon {
+  width : 24px;
+  height : 24px;
+}
+
+.globalMain {
+  max-width : 600px;
+  margin-left : auto;
+  margin-right : auto;
+}
+.siteList {
+  display : flex;
+  width : 180px;
+  flex-wrap : wrap;
+}
+
+@media (min-width: 500px) {
+  .searchForm {
+    margin-left : auto;
+    margin-right : auto;
+  }
+
+  .globalHeader {
+    margin : 60px 0 100px;
+  }
+
+  .siteList {
+    width : 100%;
+    justify-content : start;
+    margin-bottom : 20px;
+  }
+
+  .siteList > li {
+    margin-right : 25px;
+    margin : 20px;
+    border-radius : 4px;
+  }
+
+
+
+  .siteList .site .close {
+    display : none;
+    cursor : pointer ;
+  }
+
+  .siteList .site:hover > .close {
+    display : block;
+  }
+}
+
+
+.globalHeader {
+  border : 3px solid navy;
+  width : 500px;
+  margin-left : auto;
+  margin-right : auto;
+  border-radius : 10px;
+}
+
+
+.search-engine {
+  position : absolute;
+  background-color : #D0DFE6;
+  display : none;
+  border : 1px solid darkblue;
+  border-radius : 3px;
+  width : 340px;
+  z-index : 1;
+}
+
+.search-engine > ul {
+  display : flex;
+  justify-items : center;
+  flex-wrap : wrap;
+}
+
+.search-engine > ul > li {
+  margin : 6px;
+  padding : 3px;
+  border : 1px solid saddlebrown;
+  border-radius : 4px;
+  float : left;
+  cursor : pointer;
+}
+
+
+
+.siteList > li {
+  margin-bottom : 23px;
+}
+.siteList .site {
+  width : 180px;
+  display : flex;
+  justify-content : space-between;
+  align-items : center;
+  flex-direction : column;
+  background-color : #E2E1E4;
+  border-radius : 4px;
+  padding : 20px 0;
+  position : relative;
+  cursor : pointer;
+}
+.siteList .site > .logo {
+  height : 34px;
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  font-size : 34px;
+  text-transform : uppercase;
+}
+.siteList .site > .link {
+  font-size : 14px;
+  margin-top : 4px;
+}
+
+.siteList .site > .close {
+  position : absolute;
+  right : 10px;
+  top : 5px;
+}
+
+
+.siteList .addButton {
+  background-color : #E2E1E4;
+  width : 180px;
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  flex-direction : column;
+  padding : 5px 0;
+  border-radius : 4px;
+}
+
+.siteList .addButton .icon {
+  width : 36px;
+  height : 36px;
+}
+
+.siteList .addButton .text {
+  padding-bottom : 16px;
+  font-size : 14px;
+  margin-top : -12px;
+}
+
+.siteList .addButton .icon-wrapper {
+  width : 64px;
+  height : 64px;
+  display : flex;
+  justify-content : center;
+  align-items : center;
+}
+
+main {
+  display : flex;
+  overflow : hidden;
+}
+
+.bar {
+  border : 5px solid darkgray;
+  border-radius : 10px;
+  position : fixed;
+  padding : 5px;
+  left : 20px;
+}
+
+.bar li {
+  margin : 9px;
+}
+.content {
+  margin-left : 233px;
+  margin-right : -10px;
+  max-width : 100%;
+}
+
+.self {
+  margin-bottom : 10px;
+  background-color : white;
+}
+
+#video_tutorial, #tools, #js_framework, #ui_design, #pic_material, #front_end_plugin {
+  margin-bottom : 30px;
+}
+
+.v_list, .t_list, .jf_list, .ui_list, .pic_list, .plu_list {
+  display : flex;
+  justify-items : start;
+  flex-wrap : wrap;
+  background-color : white;
+}
+
+.v_list > li > a, .t_list > li > a, .jf_list > li > a, .ui_list > li > a, .pic_list > li > a, .plu_list > li > a {
+  width : 180px;
+  display : flex;
+  margin : 20px;
+  border-radius : 4px;
+  padding : 20px 0;
+  cursor : pointer;
+  background-color : #E2E1E4;
+  display : flex;
+  justify-content : center;
+  text-decoration : none;
+  color : inherit;
+}
+
+
+
+@media(max-width:500px) {
+  header, main {
+    width : 100%;
+  }
+
+  .globalHeader {
+    max-width : 90%;
+  }
+
+  .bar {
+    display : none;
+  }
+  .content {
+    width : 100%;
+    margin-left : 0;
+  }
+
+
+  .self, .v_list, .t_list, .jf_list, .ui_list, .pic_list, .plu_list {
+    max-width : 90%;
+    margin-left : auto;
+    margin-right : auto;
+  }
+
+  .siteList {
+    width : auto;
+    display : flex;
+    justify-content : start;
+  }
+
+  .siteList .site {
+    margin : 10px;
+    margin-bottom : -10px;
+    width : 90px;
+  }
+  .siteList .addButton {
+    margin : 10px;
+    margin-bottom : -10px;
+    width : 90px;
+  }
+
+  .v_list > li > a, .t_list > li > a, .jf_list > li > a, .ui_list > li > a, .pic_list > li > a, .plu_list > li > a {
+    width : 90px;
+    margin : 10px;
+    height : 61px;
+    display : flex;
+    flex-wrap : nowrap;
+    align-items : center;
+    text-align : center;
+  }
+}

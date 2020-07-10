@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>前航 - 前端导航网站</title>
+    <style type="text/css">
+.icon {
+  width : 1em;
+  height : 1em;
+  fill : currentColor;
+  overflow : hidden;
+}
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="globalHeader">
+
+
+        <form class="searchForm" method="get" action="https://www.baidu.com/s">
+            <button type="button" class="search_en">
+
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-search"></use>
+                </svg>
+
+
+            </button>
+            <input name="wd" type="text" placeholder="请输入搜索内容">
+            <button type="submit" class="search_click">搜索</button>
+        </form>
+
+
+
+        <div class="search-engine">
+            <div class="search-engine-head">
+                <strong class="search-engine-tit">选择您的默认搜索引擎：</strong>
+            </div>
+
+            <ul class="search-engine-list">
+                <li class='google_eng'>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-guge"></use>
+                    </svg>
+                    谷歌</li>
+                <li class='bing_eng'>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-bing"></use>
+                    </svg>
+
+                    必应</li>
+                <li class="baidu_eng">
+
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-baidu"></use>
+                    </svg>
+
+                    百度</li>
+                <li class="duckduckgo_eng">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-duckduckgo"></use>
+                    </svg>
+
+
+                    duckduckgo</li>
+                <li class='so_eng'>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon--o"></use>
+                    </svg>
+
+                    360搜索</li>
+                <li class="sogou_eng">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-sogou"></use>
+                    </svg>
+
+
+                    搜狗</li>
+
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+        <div class='bar'>
+            <ul>
+                <li><a href="#video_tutorial">视频教程</a></li>
+                <li><a href="#tools">学习工具</a></li>
+                <li><a href="#js_framework">js框架</a></li>
+                <li><a href="#ui_design">ui框架</a></li>
+                <li><a href="#pic_material">图片素材</a></li>
+                <li><a href="#front_end_plugin">前端插件</a></li>
+            </ul>
+        </div>
+
+        <div class='content'>
+            <div class='self'>
+                <ul class="siteList">
+                    <li class="last">
+                        <div class="addButton">
+                            <div class="icon-wrapper">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-add"></use>
+                                </svg>
+                            </div>
+                            <div class="text">新增网站</div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id='video_tutorial'>
+                <header>
+                    视频教程
+                </header>
+                <ul class="v_list" style="list-style : none;">
+                    <li> <a href="https://www.imooc.com/" target="_blank"> 慕课</a></li>
+                    <li> <a href="https://www.jikexueyuan.com/" target="_blank"> 极客学院</a></li>
+                    <li> <a href="https://jirengu.com/" target="_blank"> 饥人谷</a></li>
+                    <li> <a href="https://ke.qq.com/course/list?mt=1001" target="_blank"> 腾讯课堂</a></li>
+                    <li> <a href="https://study.163.com/" target="_blank"> 网易公开课</a></li>
+                    <li> <a href="http://www.howzhi.com/channel/IT-internet" target="_blank"> 好知</a></li>
+                    <li> <a href="https://www.zker.com.cn/" target="_blank"> 宅客学院</a></li>
+                    <li> <a href="https://www.ycku.com/" target="_blank"> 瓢城</a></li>
+                </ul>
+            </div>
+
+            <div id='tools'>
+                <header>
+                    学习工具
+                </header>
+                <ul class="t_list" style="list-style : none;">
+
+                    <li> <a href="https://jsfiddle.net/" target="_blank">JSFiddle</a></li>
+                    <li> <a href="https://codepen.io/pen" target="_blank">CodePen</a></li>
+                    <li> <a href="https://www.gitbook.com/" target="_blank">GitBook</a></li>
+                    <li> <a href="https://www.kancloud.cn/" target="_blank">看云</a></li>
+                </ul>
+
+            </div>
+            <a href="" target="_blank"></a>
+
+            <div id='js_framework'>
+                <header>
+                    js框架
+                </header>
+                <ul class="jf_list" style="list-style : none;">
+                    <li><a href="https://cn.vuejs.org/" target="_blank">Vue.js中文网</a></li>
+                    <li><a href="https://www.angularjs.net.cn/" target="_blank">Angular.js中文网</a></li>
+                    <li> <a href="https://www.jquery123.com/" target="_blank"> jQuery</a></li>
+                    <li> <a href="http://docs.kissyui.com/" target="_blank"> KISSY</a></li>
+                    <li> <a href="https://eggjs.org/zh-cn/" target="_blank"> Egg</a></li>
+                    <li> <a href="https://bl.ocks.org/mbostock/1073373" target="_blank"> D3</a></li>
+                    <li> <a href="https://redom.js.org/" target="_blank"> Redom</a></li>
+                    <li> <a href="https://thinkjs.org/" target="_blank"> ThinkJS</a></li>
+                </ul>
+            </div>
+
+
+
+            <div id='ui_design'>
+
+                <header>
+                    ui框架
+                </header>
+                <ul class="ui_list" style="list-style : none;">
+                    <li> <a href="" target="_blank"> Layui</a></li>
+                    <li> <a href="" target="_blank"> Rubik UI</a></li>
+                    <li> <a href="" target="_blank"> BUI</a></li>
+                    <li> <a href="" target="_blank"> ZUI</a></li>
+                    <li> <a href="" target="_blank"> 拼图Pintuer</a></li>
+                    <li> <a href="" target="_blank"> Atui</a></li>
+                    <li> <a href="" target="_blank"> Blaze CSS</a></li>
+                    <li> <a href="" target="_blank"> Bootstrap</a></li>
+                    <li> <a href="" target="_blank"> Element</a></li>
+                    <li> <a href="" target="_blank"> Ant Design</a></li>
+                </ul>
+            </div>
+
+
+
+
+
+
+            <div id='pic_material'>
+                <header>
+                    图片素材
+                </header>
+                <ul class="pic_list" style="list-style : none;">
+                    <li> <a href="https://www.lifeofpix.com/" target="_blank"> LifeOfPix</a></li>
+                    <li> <a href="http://imcreator.com/free" target="_blank"> IM FREE</a></li>
+                    <li> <a href="https://freelyphotos.com/" target="_blank"> Freely Photos</a></li>
+                    <li> <a href="http://cupcake.nilssonlee.se/" target="_blank"> Cupcake</a></li>
+                    <li> <a href="https://en.freejpg.com.ar/" target="_blank"> FreeJPG</a></li>
+                    <li> <a href="https://www.ssyer.com/" target="_blank"> 别样网</a></li>
+                    <li> <a href="http://trunklog.com/" target="_blank"> TrunKlog</a></li>
+                    <li> <a href="https://mmtstock.com/" target="_blank"> MMT</a></li>
+                    <li> <a href="http://streetwill.co/" target="_blank"> StreetWill</a></li>
+                    <li> <a href="http://deathtothestockphoto.com/" target="_blank"> DEATH TO STOCK</a></li>
+                </ul>
+
+            </div>
+
+
+            <div id="front_end_plugin">
+                <header>
+                    前端插件
+                </header>
+                <ul class="plu_list" style="list-style : none;">
+                    <li> <a href="https://kushagragour.in/lab/hint/" target="_blank"> Hint.css</a></li>
+                    <li> <a href="https://www.swiper.com.cn/" target="_blank"> Swiper</a></li>
+                    <li> <a href="https://pawelgrzybek.github.io/siema/" target="_blank"> Siema</a></li>
+                    <li> <a href="http://ueditor.baidu.com/website/index.html" target="_blank"> UEditor</a></li>
+                    <li> <a href="https://www.tiny.cloud/" target="_blank"> TinyMCE</a></li>
+                    <li> <a href="http://wlog.cn/waterfall/index-zh.html" target="_blank"> Waterfall</a></li>
+                    <li> <a href="https://github.com/ftlabs/fastclick" target="_blank"> FastClick</a></li>
+                    <li> <a href="http://www.geetest.com/" target="_blank"> geetest</a></li>
+                    <li> <a href="http://datatables.club/" target="_blank"> Datatables</a></li>
+                    <li> <a href="https://www.highcharts.com.cn/" target="_blank"> highcharts</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="//at.alicdn.com/t/font_1929638_dpaxg4a9kt9.js"></script>
+
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
